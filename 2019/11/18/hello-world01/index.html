@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      swift | OpenLee
+      hexoLog | OpenLee
     
   </title>
   <meta name="author" content="李康卫">
@@ -160,7 +160,7 @@
 	<!-- Page title -->
 	<p>
 		
-			当前文章&nbsp;:&nbsp;《swift》
+			当前文章&nbsp;:&nbsp;《hexoLog》
 		
 	</p>
 
@@ -258,6 +258,18 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/kaiverSmart.githup.io/plugin/toc/katelog.min.js"></script>
+
+		
 	 
 
 <div class="layout-post">
@@ -265,8 +277,8 @@
 	<div class="article-title">
 		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 		
-	<a href="/kaiverSmart.githup.io/2019/11/18/swift/" itemprop="url">
-		swift
+	<a href="/kaiverSmart.githup.io/2019/11/18/hello-world01/" itemprop="url">
+		hexoLog
 	</a>
 
 	</div>
@@ -279,8 +291,8 @@
 
 	发布于
 
-	<a href="/kaiverSmart.githup.io/2019/11/18/swift/" itemprop="url">
-		<time datetime="2019-11-18T08:51:03.000Z" itemprop="datePublished">
+	<a href="/kaiverSmart.githup.io/2019/11/18/hello-world01/" itemprop="url">
+		<time datetime="2019-11-18T08:05:04.000Z" itemprop="datePublished">
 	  		2019-11-18
 	  </time>
 	</a>
@@ -297,8 +309,8 @@
 
 	更新于
 
-	<a href="/kaiverSmart.githup.io/2019/11/18/swift/" itemprop="url">
-		<time datetime="2019-11-18T08:51:03.000Z" itemprop="dateUpdated">
+	<a href="/kaiverSmart.githup.io/2019/11/18/hello-world01/" itemprop="url">
+		<time datetime="2019-11-18T08:05:04.000Z" itemprop="dateUpdated">
 	  		2019-11-18
 	  </time>
 	</a> 
@@ -318,10 +330,33 @@
 	</div>
 
 	<div class="article-content" id="article-content">
-			
+		<p><a href="https://www.jianshu.com/p/1dfddcd00898" target="_blank" rel="noopener">本人简书</a><br>#1.环境准备<br>准备 node 和 git 环境 首先，安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">NodeJS</a>，因为 <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 是基于 Node.js 驱动的一款博客框架</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo :"></a>安装hexo :</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装 Hexo 完成后，再执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init myBlog</span><br><span class="line">$ cd myBlog</span><br><span class="line">$  npm install</span><br></pre></td></tr></table></figure>
+<h2 id="运行-hexo-s命令，其中-s-是-server-的缩写，在浏览器中输入-http-localhost-4000-回车就可以预览效果了。"><a href="#运行-hexo-s命令，其中-s-是-server-的缩写，在浏览器中输入-http-localhost-4000-回车就可以预览效果了。" class="headerlink" title="运行  hexo s命令，其中 s 是 server 的缩写，在浏览器中输入 http://localhost:4000 回车就可以预览效果了。"></a>运行  hexo s命令，其中 s 是 server 的缩写，在浏览器中输入 <a href="http://localhost/" target="_blank" rel="noopener">http://localhost</a>:4000 回车就可以预览效果了。</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<h2 id="2-第一个Hello-World"><a href="#2-第一个Hello-World" class="headerlink" title="2.第一个Hello World"></a>2.第一个Hello World</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;FirstHexo&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="以上操作是创建在-source-posts-FirstHexo-md"><a href="#以上操作是创建在-source-posts-FirstHexo-md" class="headerlink" title="以上操作是创建在 source/_posts/FirstHexo.md"></a>以上操作是创建在 source/_posts/FirstHexo.md</h3><h2 id="3-主题配置-以3-hexo为例"><a href="#3-主题配置-以3-hexo为例" class="headerlink" title="3.主题配置 以3-hexo为例"></a>3.主题配置 以3-hexo为例</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/yelog/hexo-theme-3-hexo.git themes/3-hexo</span><br></pre></td></tr></table></figure>
+<p><img src="https://upload-images.jianshu.io/upload_images/2473349-33a0fbabdeee6567.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="11573725279_.pic.jpg"></p>
+<p>下载好后打开_config.yml  配置主题(也可 配置像主题等基本xing’xi)   把theme: landscape 改成想用的主题 theme: 3-hexo执行以下命令进行部署发布 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 刷下全新的主题出来了 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo clean</span><br><span class="line">S hexo s</span><br></pre></td></tr></table></figure>
+
+<p>##4.部署到git<br>先配置sshkey  <a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">详细操作</a>里面有或者百度吧!</p>
+<p>安装 插件 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>type，repo，branch前两个空格，“：”后面一个空格，差一个都不行的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: url</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>###部署后可能有些配置要改这里举个例子<br>报404加载不出来或者样式加载不出来<br>需要修改_config.yml文件中的url地址和根目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line">url: https://banjingwei.github.io/ban.github.io</span><br><span class="line">root: /ban.github.io/</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
+<p>本文纯属笔记以下为参考文章已SART<br><a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo主题</a><br><a href="https://www.cnblogs.com/liuxianan/" target="_blank" rel="noopener">小茗同学的博客园</a><br><a href="https://yelog.org/2016/10/22/hexo-gitHub-pages-create-own-blog/" target="_blank" rel="noopener">yelog</a></p>
+	
 	</div>
 	
-	<div id="current-post-cover" data-scr="/kaiverSmart.githup.io/kaiverSmart.githup.io/img/logo.png"></div>
+	<div id="current-post-cover" data-scr="/kaiverSmart.githup.io/img/cart_cover.jpg"></div>
 
 	<!-- relate post, comment...-->
 	<div class="investment-container">
@@ -336,8 +371,12 @@
 	<span>
 		<a href="javascript: window.scrollTo(0, 0);" target="_blank" rel="noopener">返回顶部</a>
 		
+			<a href="/kaiverSmart.githup.io/2019/11/18/swift/" title="swift" rel="prev">
+				&laquo;上一篇
+			</a>
 		
-			<a href="/kaiverSmart.githup.io/2019/11/18/hello-world01/" title="hexoLog" rel="next">
+		
+			<a href="/kaiverSmart.githup.io/2019/11/18/hexoLog/" title="hexoLog" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -358,24 +397,22 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/kaiverSmart.githup.io/2019/11/18/hello-world01/" title="hexoLog">
-								hexoLog			
+							<a class="relate-post-title" href="/kaiverSmart.githup.io/2019/11/18/swift/" title="swift">
+								swift			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
 								十一月 18日, 2019				
 							</p>
 							<p class="relate-post-content">
-								本人简书#1.环境准备准备 node 和 git 环境 首先，安装 NodeJS，因为 Hexo 是基于 Node.js 驱动的一款博客框架
-安装hexo :1$ npm install -g hexo-cli
-安装 Hexo 完成后...
+								
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/kaiverSmart.githup.io/2019/11/18/hello-world01/" title="hexoLog">				
+							<a href="/kaiverSmart.githup.io/2019/11/18/swift/" title="swift">				
 								
-								<img class="lazy" src="/kaiverSmart.githup.io/img/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="hexoLog"/>
+								<img class="lazy" src="/kaiverSmart.githup.io/img/img/placeholder.jpg" data-src="/kaiverSmart.githup.io/img/logo.png" alt="swift"/>
 							</a>
 						</div>
 					</li>											
